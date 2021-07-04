@@ -16,9 +16,7 @@ def load_image(image_file):
 nav = st.sidebar.radio("Navigation", ["HOME", "CHECK YOUR PLANT"])
 
 if nav == "HOME":
-    st.image("beautify//plant_image.png", width = 500)
-
-    st.header("Identification of the plant diseases is the key to preventing the losses in the yield and quantity of the agricultural product. It requires tremendous amount of work, expertize in the plant diseases, and also require the excessive processing time. Hence, image processing is used for the detection of plant diseases. Disease detection involves the steps like image acquisition, image pre-processing, image segmentation, feature extraction and classification.")
+    st.header("Identification of healthiness of plant is the key to preventing the losses in the yield and quantity of the agricultural product. It requires tremendous amount of work, expertize in the plant diseases, and also require the excessive processing time. Hence, Deep learning is used for the detection of plant healthiness. Health detection involves the steps like image acquisition, image pre-processing, image augmentation and classification.")
     st.subheader("This video shows how plant detection is done withot Deep Learning in the Hermiston Agricultural Research and Extension Center in Hermiston, Oregon")
     video_file = open('beautify//plant_video.mp4', 'rb')
     video_bytes = video_file.read()
